@@ -1,5 +1,10 @@
-#include "add.h"
+#include <math.h>
 
-int add(int a) {
-    return a + 5;
+double squareRoot(const double a) {
+    double b = sqrt(a);
+    if(b != b) { // nan check
+        return -1.0;
+    }else{
+        return sqrt(a);
+    }
 }

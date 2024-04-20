@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from GitHub
-                git branch: 'main', url: 'https://github.com/nallasivamselvaraj/GTest.git'
+                git branch: 'master', url: 'https://github.com/nallasivamselvaraj/GTest.git'
             }
         }
         stage('Build Project') {
